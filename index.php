@@ -71,9 +71,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="logo">
+            <img src="https://loghi-famosi.com/wp-content/uploads/2020/09/Google-Logo.png" alt="">
+            <h3>Privacy e Termini</h3>
+        </div>
+        <div>
+            <i class="fas fa-th"></i>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </header>
 
     <!-- MAIN -->
     <main>

@@ -19,6 +19,32 @@
 }
 /* end utility */
 
+/* HEADER */
+header{
+    padding: 15px;
+    border-bottom: 1px solid #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 70px;
+}
+.logo h3{
+    color: #3D3D3DCC;
+    padding: 0 15px;
+    font-weight: 500;
+}
+header i{
+    font-size: 25px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
 /* MAIN */
 p{
     padding: 20px 0;
