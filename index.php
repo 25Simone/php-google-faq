@@ -68,7 +68,17 @@
 <body>
     <header></header>
 
-    <main></main>
+    <main>
+        <?php foreach ($questions as $question) { ?>
+            <div class="container">
+                <?php
+                    $titleSize = $question['titleSize'];
+                    $title = $question['title'];
+                    echo "<$titleSize> $title </$titleSize>";
+                ?>
+            </div>
+        <?php } ?>
+    </main>
 
     <footer></footer>
 </body>
