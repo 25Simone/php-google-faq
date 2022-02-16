@@ -55,6 +55,14 @@
         ],
     ];
 
+    $navItems = [
+        "Introduzione",
+        "Norme sulla privacy",
+        "Termini di servizio",
+        "Tecnologie",
+        "Domande frequenti",
+    ];
+
     $footerItems = [
         "Google - ",
         " Tutto su Google - ",
@@ -74,6 +82,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
+    <!-- HEADER -->
     <header>
         <div class="logo">
             <img src="https://loghi-famosi.com/wp-content/uploads/2020/09/Google-Logo.png" alt="">
@@ -83,6 +92,15 @@
             <i class="fas fa-th"></i>
             <i class="fas fa-user-circle"></i>
         </div>
+        <nav>
+            <ul>
+                <?php
+                    foreach ($navItems as $item) {
+                        echo "<li>$item</li>";
+                    }
+                ?>
+            </ul>
+        </nav>
     </header>
 
     <!-- MAIN -->
