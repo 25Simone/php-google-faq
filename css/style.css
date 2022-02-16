@@ -2,12 +2,37 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 /* utility */
 .container{
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 100px 0;
 }
+.title{
+    color: #333;
+}
 /* end utility */
+
+p{
+    padding: 20px 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+}
+a{
+    text-decoration: none;
+    color: #3367d6;
+}
+.container ol{
+    padding: 20px 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+}
+.nested-list{
+    margin-left: 20px;
+    list-style: lower-latin;
+}
