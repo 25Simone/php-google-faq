@@ -54,6 +54,13 @@
             ],
         ],
     ];
+
+    $footerItems = [
+        "Google - ",
+        " Tutto su Google - ",
+        " Privacy - ",
+        " Termini",
+    ];
 ?>
 
 <!DOCTYPE html>
@@ -68,14 +75,18 @@
 <body>
     <header></header>
 
+    <!-- MAIN -->
     <main>
         <?php foreach ($questions as $question) { ?>
+            <!-- CONTAINER -->
             <div class="container">
                 <?php
                     $titleSize = $question['titleSize'];
                     $title = $question['title'];
+                    // QUESTION
                     echo "<$titleSize class='title'> $title </$titleSize>";
                     foreach ($question['answer'] as $answer) {
+                        // ANSWER
                         echo "<p>$answer</p>";
                     }
                 ?>
@@ -83,6 +94,24 @@
         <?php } ?>
     </main>
 
-    <footer></footer>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <?php
+                        foreach ($footerItems as $footerItem) {
+                            echo "<li>$footerItem</li>";
+                        }
+                    ?>
+                </ul>
+                <div>
+                    <select name="languages" id="select-languages">
+                        <option value="">Italiano</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
